@@ -12,6 +12,7 @@ onnx==1.16.1
 qwen-vl-utils
 Pillow
 librosa
+opencv-python
 
 gradio>=4.36
 modelscope
