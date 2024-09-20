@@ -15,6 +15,7 @@ librosa
 
 gradio>=4.36
 modelscope
+modelscope_studio
 
 # jupyter
 jupyterlab
