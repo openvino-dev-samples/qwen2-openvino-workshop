@@ -1,4 +1,4 @@
-# OpenVINO-devcon-workshop
+# OpenVINO-Qwen2-workshop
 
 This is a OpenVINO Workshop based on Intel AI PC. You can learn how to create a streamlined, voice-activated interface that developers can easily integrate and deploy。
 
