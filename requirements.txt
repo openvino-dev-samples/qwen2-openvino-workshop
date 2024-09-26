@@ -6,7 +6,7 @@ openvino-genai==2024.4.0.0
 torch==2.3.1
 torchvision
 
-git+https://github.com/huggingface/transformers.git
+transformers>=4.45
 librosa==0.10.2
 onnx==1.16.1
 qwen-vl-utils
@@ -16,7 +16,7 @@ opencv-python
 
 gradio>=4.36
 modelscope
-modelscope_studio
+modelscope_studio>=0.4.2
 
 # jupyter
 jupyterlab
