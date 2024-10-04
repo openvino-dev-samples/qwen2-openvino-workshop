@@ -78,7 +78,7 @@ def make_vl_demo(model, processor):
         inputs = processor(text=[text], images=image_inputs, videos=video_inputs, padding=True, return_tensors="pt").to(model.device)
 
         tokenizer = processor.tokenizer
-        streamer = TextIteratorStreamer(tokenizer, timeout=20.0, skip_prompt=True, skip_special_tokens=True)
+        streamer = TextIteratorStreamer(tokenizer, timeout=60.0, skip_prompt=True, skip_special_tokens=True)
 
         gen_kwargs = {"max_new_tokens": 512, "streamer": streamer, **inputs}
 
@@ -271,7 +271,7 @@ def make_audio_demo(model, processor):
             [{"role": "system", "content": [{"text": "You are a helpful assistant."}]}] + task_history, add_generation_prompt=True, tokenize=False
         )
         inputs = processor(text=text, audios=audios, return_tensors="pt", padding=True)
-        streamer = TextIteratorStreamer(processor.tokenizer, skip_prompt=True, skip_special_tokens=True)
+        streamer = TextIteratorStreamer(processor.tokenizer, timeout=60.0, skip_prompt=True, skip_special_tokens=True)
         gen_kwargs = {"max_new_tokens": 512, "streamer": streamer, **inputs}
         chatbot.append([None, ""])
         task_history.append({"role": "assistant", "content": [{"text": ""}]})
