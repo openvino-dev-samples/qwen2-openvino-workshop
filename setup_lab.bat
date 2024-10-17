@@ -9,7 +9,6 @@ call "C:\Users\%USERNAME%\miniconda3\Scripts\activate.bat" openvino_qwen
 echo Installing requirements...
 python -m pip install --upgrade pip
 pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
-pip install --pre -U openvino-genai --extra-index-url https://storage.openvinotoolkit.org/simple/wheels/nightly
 
 echo Checking installed packages...
 conda list
