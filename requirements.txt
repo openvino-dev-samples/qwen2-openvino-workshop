@@ -1,6 +1,7 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
 nncf==2.13.0
 optimum-intel==1.20.0
+openvino-genai==2024.4.0.0
 
 torch==2.3.1
 torchvision
