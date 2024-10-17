@@ -1,12 +1,11 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
 nncf==2.13.0
-openvino==2024.4.0
-openvino-genai==2024.4.0.0
+optimum-intel==1.20.0
 
 torch==2.3.1
 torchvision
 
-transformers>=4.45
+transformers==4.45
 librosa==0.10.2
 onnx==1.16.1
 qwen-vl-utils
